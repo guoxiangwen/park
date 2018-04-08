@@ -1,0 +1,61 @@
+.fade-enter, .fade-appear { opacity:0; }
+.fade-enter.fade-enter-active,
+.fade-appear.fade-appear-active { opacity:1; transition: opacity 3000ms; }
+.fade-leave { opacity:1; }
+.fade-leave.fade-leave-active { opacity:0; transition: opacity 3000ms; }
+
+.right-to-left-enter {
+  opacity: 0;
+  transform: translate(5%, 0);
+}
+
+.right-to-left-enter.right-to-left-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 150ms linear, transform 200ms ease-out;
+}
+
+.right-to-left-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.right-to-left-leave.right-to-left-leave-active {
+  opacity: 0;
+  transform: translate(1%, 0);
+  transition: opacity 100ms linear, transform 200ms linear;
+}
+// 进出场动画
+// 飞入
+.slide-in-appear {
+  transform: translate3D(100%, 0, 0);
+  transition: all 300ms linear;
+
+  &.slide-in-appear-active {
+    transform: translate3D(0, 0, 0);
+  }
+}
+
+.slide-in-enter {
+  transform: translate3D(100%, 0, 0);
+  transition: all 300ms linear;
+
+  &.slide-in-enter-active {
+    transform: translate3D(0, 0, 0);
+  }
+}
+
+// 向左滑出
+.slide-in-leave {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transform: translate3D(0, 0, 0);
+  transition: all 300ms linear;
+
+  &.slide-in-leave-active {
+    opacity: 0.01;
+    transform: translate3D(-100%, 0, 0);
+  }
+}

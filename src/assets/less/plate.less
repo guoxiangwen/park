@@ -1,0 +1,162 @@
+.plateInfo{
+    height: 200px;
+    background: #108ee9;
+    .plate {
+       display: flex;
+       align-items: center;
+      .info{
+          width:490px;
+          border-radius: 20px;
+          margin: 0 auto;
+          background: #fff;
+          padding: 5px 10px;
+          height: 80px;
+          line-height: 80px;
+      }
+        font-size: 38px;
+        .region{
+            color: #000;
+            float:left;
+            margin-left: 16px;
+            span {
+                float:left;
+            }
+            .down{
+                margin-top: 5px;
+            }
+            .separator{
+                margin-left: 15px;
+            }
+        }
+    }
+    .inputContainer{
+        float:left;
+        position:relative;
+        margin-left: 15px;
+        width: 330px;
+        height: 100%;
+        input {
+            opacity: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            padding:0;
+            margin:0;
+            border:0;
+        }
+        .cpnContainer{
+            z-index: 8;
+            position: absolute;
+            width: 100%;
+            left:0;
+            height: 100%;
+            display: inline-block;
+            .item{
+                float: left;
+                width: 40px;
+                height: 5px;
+                background: #000;
+                margin-top: 40px;
+                margin-left: 15px;
+                &:first-child{
+                    margin-left:0;
+                }
+            }
+            .show{
+                float: left;
+                width: 40px;
+                height: 80px;
+                color: #000;
+                font-weight: 600;
+                line-height: 80px;
+                margin-left: 15px;
+                &:first-child{
+                    margin-left:0;
+                }
+            }
+        }
+    }
+}
+
+.cpnlist{
+    height: 310px;
+    margin-top: 8px;
+    padding: 10px 0;
+    margin: 0;
+    overflow: auto;
+    
+    .item{
+        list-style: none;
+        float: left;
+        width: 68px;
+        height: 66px;
+        background: #efefef;
+        font-size: 34px;
+        line-height: 66px;
+        text-align: center;
+        color: #333;
+        font-weight: 200;
+        border-radius: 10px;
+        margin-top: 8px;
+        margin-left: 20px; 
+    }
+    .item.active{
+        background: #108ee9;
+        color: #fff;
+    }
+}
+.popup{
+    .title{
+        position: relative;
+        height: 80px;
+        color: #888;
+        padding-left: 20px;
+        line-height: 80px;
+    }
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 6px;
+    }
+}
+.confirm{
+    margin-top: 40px;
+}
+
+.am-checkbox.am-checkbox-checked .am-checkbox-inner{
+    margin-right: 10px;
+}
+.am-checkbox-inner{
+    margin-right: 10px;
+}
+
+
+.my-carousel {
+  background: #fff;
+}
+.my-carousel a {
+  display: inline-block;
+  width: 100%;
+  margin: 0; padding: 0;
+}
+.my-carousel a img {
+  width: 100%;
+
+  vertical-align: top;
+}
+.my-carousel .v-item {
+  height: 0.72rem;
+  line-height: 0.72rem;
+  padding-left: 0.2rem;
+}
+.sub-title {
+  color: #888;
+  font-size: .28rem;
+  padding: 30px 0 18px 0;
+}
+
+.am-flexbox .am-flexbox-item{
+    margin-top: .4rem;
+}

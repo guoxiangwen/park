@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "sourceMap": true,
+        "moduleResolution":"node",
+        "target": "es6",
+        "jsx": "react",
+        "allowJs":true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "allowSyntheticDefaultImports": true,
+        "lib":[
+            "es6",
+            "es7",
+            "dom"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
