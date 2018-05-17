@@ -34,7 +34,7 @@ const getPublicUrl = appPackageJson =>
 function getServedPath(appPackageJson) {
   const publicUrl = getPublicUrl(appPackageJson);
   const servedUrl = envPublicUrl ||
-    (publicUrl ? url.parse(publicUrl).pathname : '/phone');
+    (publicUrl ? url.parse(publicUrl).pathname : '/phonepay');
   return ensureSlash(servedUrl, true);
 }
 

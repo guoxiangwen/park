@@ -1,4 +1,4 @@
-import HTTP from '../http/index';
+import HTTP from "../http/index";
 import {
   ParkInfoResource,
   FeeCalcResource,
@@ -8,11 +8,17 @@ import {
   payInfoResource,
   wxWapPay,
   getOpenId,
-  getCarouselData
-} from './resource';
+  getCarouselData,
+  getParkInfoWithGateNo,
+  wxWapPayNew,
+  // aliWapPayNew
+} from "./resource";
 
 export default {
-  getParkInfoResource(data) {
+  getParkInfoWithGateNo(data) {
+    return HTTP.Get(getParkInfoWithGateNo, data);
+  },
+  getParkInfoResource(data = {}) {
     return HTTP.Get(ParkInfoResource, data);
   },
   getFeeCalcResource(data) {
@@ -33,6 +39,9 @@ export default {
   wxWapPay(data) {
     return HTTP.Post(wxWapPay, data);
   },
+  wxWapPayNew(data) {
+    return HTTP.Post(wxWapPayNew, data);
+  },
   getOpenId(data) {
     return HTTP.Post(getOpenId, data);
   },
@@ -40,4 +49,3 @@ export default {
     return HTTP.Post(getCarouselData, data);
   }
 };
-
